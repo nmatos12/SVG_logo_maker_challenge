@@ -7,7 +7,7 @@ const svgData = function({text, textColor, shape, shapeColor} , shapeData) {
 
     ${shapeData}
 
-    <text x='150' y='125' font-size='60' text-anchor='middle' fill='${textColor}'>${text}</text></svg>`;
+    <text x='150' y='125' font-size='60' text-anchor='middle' fill='${textColor}'>${text}</text>\n</svg>`;
 };
 
 const prompt = function() {
@@ -63,7 +63,7 @@ const prompt = function() {
             console.log('Please choose a shape', error);
         }
         const data = svgData(answers, shapeData);
-        fs.writeFile('logo.svg', data, (error) => {
+        fs.writeFile('./dist/logo.svg', data, (error) => {
             if (error) {
                 return console.log(error);
             }
@@ -71,7 +71,7 @@ const prompt = function() {
                 console.log('New logo generated');
             }
         });
-        fs.writeFile('./examples/svg.html', data, (error) => {
+        fs.writeFile('./dist/svg.html', data, (error) => {
             if (error) {
                 return console.log(error);
             }
