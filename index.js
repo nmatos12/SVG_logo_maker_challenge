@@ -21,7 +21,7 @@ const prompt = function() {
         {
             type: 'input',
             name: 'shapeColor',
-            message: 'Please enter a color for your logo',
+            message: 'Please enter a color for your logo (Please enter using hex color value or color name)',
         },
         {
             type: 'input',
@@ -39,7 +39,7 @@ const prompt = function() {
         {
             type: 'input',
             name: 'textColor',
-            message: 'Please enter a color for your text',
+            message: 'Please enter a color for your text (Please enter using hex color value or color name)',
         },
     ])
     .then((answers) => {
@@ -69,6 +69,14 @@ const prompt = function() {
             }
             else {
                 console.log('New logo generated');
+            }
+        });
+        fs.writeFile('./examples/svg.html', data, (error) => {
+            if (error) {
+                return console.log(error);
+            }
+            else {
+                console.log('New logo html generated');
             }
         });
     })
