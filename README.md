@@ -2,7 +2,7 @@
 
 ## Description
 
-This application was desgined to generate a logo
+This application was desgined to generate a logo using SVGs (Scalable Vector Graphics) and user input. Through this application users can make a simple logo for professional use. The application allows for users to enter text in their logo, and to select a shape for thier SVG using the three most common shapes of circle, square, and triangle. In addition, users are able to select the color of the text and shape of their logo thgrough the use of color names or hex color values thus allowing for more methods of personalization.
 
 ## Installation
 
@@ -16,11 +16,17 @@ HTML, JavaScript, Markdown
 
 Links below provide a functionality of webpage.
 
-[Screencastify Demo](https://watch.screencastify.com)
+``` **Important:** Within the videos linked below, when demonstarting the ability to determine a color for the shape and text of the svg both hex color value and color name are used. Thus showing the ability for users to do the same.```
 
-[MP4 Download Demo]()
+[Screencastify Demo](https://watch.screencastify.com/v/JlSLepYcuqVPrES5KkYg)
 
-![Image showing functionality of the README generator]()
+[MP4 Download Demo](examples/videos/SVG%20Logo%20Maker.mp4)
+
+![Image showing the creation of an SVG logo within the terminal, and all user prompts in addition to responses for all SVGs created](examples/images/prompts/svg_example_cli_all.png)
+
+![Image showing all SVGs created using the application](examples/images/logos/svg_example_all.png)
+
+![Image showing passed tests for the created SVG shapes](examples/images/tests/svg_example_cli_tests.png)
 
 ## Credits
 
