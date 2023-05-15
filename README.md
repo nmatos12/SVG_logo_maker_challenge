@@ -14,7 +14,7 @@ HTML, JavaScript, Markdown
 
 ## Demos
 
-Links below provide a functionality of webpage.
+Links below show functionality of the application.
 
 ``` **Important:** Within the videos linked below, when demonstarting the ability to determine a color for the shape and text of the svg both hex color value and color name are used. Thus showing the ability for users to do the same.```
 
